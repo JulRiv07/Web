@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #33474f;
+    background-color: #f4fafb;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.menu {
+    background-color: #1b4965;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.menu-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu-lista a {
+    text-decoration: none;
+    color: #d3e6f0;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.menu-lista a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.introduccion {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.introduccion h1 {
+    color: #1b4965;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #1b4965;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+.bloque-texto ul {
+    margin-left: 20px;
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.bloque-imagen {
+    width: 45%;
+    background-color: #d3e6f0;
+    border-radius: 6px;
+}
+
+.bloque-texto {
+    flex: 1;
+}
+
+.bloque-invertido {
+    flex-direction: row-reverse;
+}
+
+.seccion-boton {
+    margin-bottom: 20px;
+}
+
+.boton-video {
+    display: inline-block;
+    background-color: #2a9d8f;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-video:hover {
+    background-color: #21867a;
+}
+
+.pie {
+    background-color: #1b4965;
+    color: #d3e6f0;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+    .bloque,
+    .bloque-invertido {
+        flex-direction: column;
+    }
+
+    .bloque-imagen {
+        width: 100%;
+    }
+
+    .menu-lista {
+        gap: 15px;
+    }
+
+    .introduccion h1 {
+        font-size: 26px;
+    }
+}
